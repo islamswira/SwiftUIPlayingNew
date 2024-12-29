@@ -16,7 +16,7 @@ struct ContentView: View {
                 SpriteView(scene: SnowFall(), options: [.allowsTransparency])
             }
         }
-        .ignoresSafeArea()
+//        .ignoresSafeArea()
     }
 }
 

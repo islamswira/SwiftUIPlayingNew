@@ -10,13 +10,13 @@ import SpriteKit
 
 struct ContentView: View {
     var body: some View {
-//        GeometryReader { _ in
+        GeometryReader { _ in
             ZStack {
                 Color(.darkGray)
                 SpriteView(scene: SnowFall(), options: [.allowsTransparency])
             }
-//        }
-//        .ignoresSafeArea()
+        }
+        .ignoresSafeArea()
     }
 }
 

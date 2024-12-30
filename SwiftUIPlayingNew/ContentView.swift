@@ -16,7 +16,7 @@ struct ContentView: View {
                 SpriteView(scene: SnowFall(), options: [.allowsTransparency])
             }
         }
-//        .ignoresSafeArea()
+        .ignoresSafeArea()
     }
 }
 
@@ -26,8 +26,7 @@ class SnowFall: SKScene {
         size = UIScreen.main.bounds.size
         scaleMode = .resizeFill
         anchorPoint = CGPoint(x: 0.5, y: 1)
-        backgroundColor = .clear
-
+        backgroundColor = .black
 
         let node = SKEmitterNode(fileNamed: "ParticleRain.sks")!
         addChild(node)
